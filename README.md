@@ -5,7 +5,7 @@ This project, Lingo Translator, is a web application that enables users to trans
 
 # Browser Compatibility
 
-The project uses various web technologies and APIs, and browser compatibility may vary. Make sure you're using a modern browser that supports the required features, such as speech recognition and the Clipboard API. The webpage works in firefox
+The project uses various web technologies and APIs, and browser compatibility may vary. Make sure you're using a modern browser that supports the required features, such as speech recognition and the Clipboard API. The webpage works in firefox.
 
 # Installation
 
