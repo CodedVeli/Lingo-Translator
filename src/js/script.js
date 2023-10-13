@@ -81,10 +81,7 @@ translationBtn.addEventListener('click', () => {
        recognitionInstance.addEventListener('error', (event) => {
         if (event.error) {
             console.error('Speech recognition error:', event.error);
-            if (event.error === 'no-speech') {
-            } else if (event.error === 'audio-capture') {
-            } else if (event.error === 'not-allowed') {
-            }
+            
         }
        });
    
