@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link href="/dist/output.css" rel="stylesheet">
 
     <title>Lingo-Translator</title>
     
@@ -13,12 +14,16 @@
     <div class=" bg-white rounded-xl p-5">
         <div>
             <div class="bg-blue-500 p-6 rounded-xl ">
-                <textarea class=" p-20 border-1 bg-white " id="from-text"  placeholder="Enter text"></textarea>
+                <textarea class=" p-20 border-1 bg-white " contenteditable id="from-text"  placeholder="Enter text"></textarea>
                 <textarea class="p-20 border-1 bg-white "  id="to-text" placeholder="Translated text" readonly disabled></textarea>
             </div>
             <ul>
                 <li>
                     <div class="flex justify-between">
+
+                            <span id="recognition" class="material-symbols-outlined">
+                                mic
+                            </span>
                         
                         <span class="material-symbols-outlined">
                             content_copy
@@ -37,7 +42,7 @@
                         <span class="material-symbols-outlined">
                             content_copy
                         </span>
-                        <span id="pronounce" class="material-symbols-outlined">
+                        <span id="pronounce1" class="material-symbols-outlined">
                             volume_up
                         </span>
                     </div>
@@ -46,8 +51,11 @@
         </div>
         <button class=" w-full bg-blue-600 text-white rounded-lg">Translate Text</button>
     </div>
+    
     <script src="../src/js/countries.js"></script>
     <script src="../src/js/script.js"></script>
+   
+      
     
 </body>
 </html>
