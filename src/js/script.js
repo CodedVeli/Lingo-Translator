@@ -6,6 +6,9 @@ const swap = document.getElementById('swap');
 const pronounce = document.getElementById('pronounce');
 const pronounce1 = document.getElementById('pronounce1');
 const startRecognitionButton = document.getElementById('recognition');
+const copy = document.getElementById('copy');    
+const copy2 = document.getElementById('copy2');       
+
 
 
 selectTag.forEach((tag, id) => {
@@ -102,3 +105,27 @@ translationBtn.addEventListener('click', () => {
        });
    }
    
+
+   // Copy to clipboard
+
+    copy.addEventListener('click', () => {
+        let text = fromText.value;
+        if (!text) return;
+        navigator.clipboard.writeText(text).then(() => {
+            console.log('Copied to clipboard');
+        }).catch((error) => {
+            console.error('Error in copying text: ', error);
+        });
+    });
+
+    copy2.addEventListener('click', () => {
+        let text = toText.value;
+        if (!text) return;
+        navigator.clipboard.writeText(text).then(() => {
+            console.log('Copied to clipboard');
+        }).catch((error) => {
+            console.error('Error in copying text: ', error);
+        });
+    });
+    
+    
