@@ -72,6 +72,11 @@
   font-family: Kaushan Script, cursive
 }
 
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem
+}
+
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity))

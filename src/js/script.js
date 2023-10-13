@@ -117,4 +117,3 @@ translationBtn.addEventListener('click', () => {
         });
     });
     
-    
