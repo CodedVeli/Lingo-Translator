@@ -42,6 +42,8 @@ translationBtn.addEventListener('click', () => {
     fetch(translationApi).then(res => res.json()).then(data => toText.value = data.responseData.translatedText);
 });
 
+// pronounce text to speech
+
     pronounce.addEventListener('click', () => {
         let text = fromText.value;
         if (!text) return;
