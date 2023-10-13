@@ -76,30 +76,20 @@ translationBtn.addEventListener('click', () => {
        });
    
        recognitionInstance.addEventListener('end', () => {
-           // This is triggered when speech recognition ends
-           // You can perform additional actions here if needed
        });
    
        recognitionInstance.addEventListener('error', (event) => {
         if (event.error) {
             console.error('Speech recognition error:', event.error);
-            // You can perform specific actions based on the type of error, if needed.
-            // For example, you might show a user-friendly error message.
             if (event.error === 'no-speech') {
-                // Handle the 'no-speech' error
             } else if (event.error === 'audio-capture') {
-                // Handle the 'audio-capture' error
             } else if (event.error === 'not-allowed') {
-                // Handle the 'not-allowed' error
             }
-            // Add more error cases as needed.
         }
        });
    
        recognitionInstance.start();
    
-       // Add a button or an event listener to start recognition when needed
-       // For example:
        startRecognitionButton.addEventListener('click', () => {
            recognitionInstance.start();
        });
